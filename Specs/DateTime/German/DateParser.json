@@ -296,6 +296,28 @@
     ]
   },
   {
+    "Input": "Ich gehe am 3-7-2017 zurück.",
+    "Context": {
+      "ReferenceDateTime": "2016-11-07T00:00:00"
+    },
+    "NotSupportedByDesign": "python",
+    "Results": [
+      {
+        "Text": "3-7-2017",
+        "Type": "date",
+        "Value": {
+          "Timex": "2017-07-03",
+          "FutureResolution": {
+            "date": "2017-07-03"
+          },
+          "PastResolution": {
+            "date": "2017-07-03"
+          }
+        }
+      }
+    ]
+  },
+  {
     "Input": "13.5.2015",
     "Context": {
       "ReferenceDateTime": "2016-11-07T00:00:00"
@@ -325,7 +347,7 @@
     "NotSupportedByDesign": "python",
     "Results": [
       {
-        "Text": "2015.5.13",
+        "Text": "5.13.2015",
         "Type": "date",
         "Value": {
           "Timex": "2015-05-13",
