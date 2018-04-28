@@ -347,7 +347,7 @@
     "NotSupportedByDesign": "python",
     "Results": [
       {
-        "Text": "5.13.2015",
+        "Text": "2015.5.13",
         "Type": "date",
         "Value": {
           "Timex": "2015-05-13",
