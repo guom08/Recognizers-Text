@@ -1,0 +1,54 @@
+{
+    "outputPath": "./src/resources/",
+    "configFiles": [
+        {
+            "input": ["Base-PhoneNumbers" ],
+            "output": "basePhoneNumbers",
+            "header": [
+                "export namespace BasePhoneNumbers {"
+            ],
+            "footer": [ "}" ]
+        },
+        {
+            "input": ["Base-Ip" ],
+            "output": "baseIp",
+            "header": [
+                "export namespace BaseIp {"
+            ],
+            "footer": [ "}" ]
+        },
+        {
+            "input": ["Base-Mention" ],
+            "output": "baseMention",
+            "header": [
+                "export namespace BaseMention {"
+            ],
+            "footer": [ "}" ]
+        },
+        {
+            "input": ["Base-Hashtag" ],
+            "output": "baseHashtag",
+            "header": [
+                "export namespace BaseHashtag {"
+            ],
+            "footer": [ "}" ]
+        },
+        {
+            "input": ["Base-URL" ],
+            "output": "baseURL",
+            "header": [
+                "import { BaseIp } from \"./baseIp\";",
+                "export namespace BaseURL {"
+            ],
+            "footer": [ "}" ]
+        },
+        {
+            "input": ["Base-Email" ],
+            "output": "baseEmail",
+            "header": [
+                "export namespace BaseEmail {"
+            ],
+            "footer": [ "}" ]
+        }
+    ]
+}
