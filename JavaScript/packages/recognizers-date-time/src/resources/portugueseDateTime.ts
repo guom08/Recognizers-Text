@@ -66,12 +66,12 @@ export namespace PortugueseDateTime {
 	export const DateExtractor2 = `\\b(${WeekDayRegex}(\\s+|\\s*,\\s*))?${DayRegex}\\s*([\\.\\-]|de)?\\s*${MonthRegex}?(\\s*(,|de)\\s*)${YearRegex}\\b`;
 	export const DateExtractor3 = `\\b(${WeekDayRegex}(\\s+|\\s*,\\s*))?${DayRegex}(\\s+|\\s*,\\s*|\\s+de\\s+|\\s*-\\s*)${MonthRegex}((\\s+|\\s*(,|de)\\s*)${YearRegex})?\\b`;
 	export const DateExtractor4 = `\\b${MonthNumRegex}\\s*[/\\\\\\-]\\s*${DayRegex}\\s*[/\\\\\\-]\\s*${YearRegex}`;
-	export const DateExtractor5 = `\\b${DayRegex}\\s*[/\\\\\\-]\\s*${MonthNumRegex}\\s*[/\\\\\\-]\\s*${YearRegex}`;
+	export const DateExtractor5 = `\\b${DayRegex}\\s*[/\\\\\\-\\.]\\s*${MonthNumRegex}\\s*[/\\\\\\-\\.]\\s*${YearRegex}`;
 	export const DateExtractor6 = `(?<=\\b(em|no|o)\\s+)${MonthNumRegex}[\\-\\.]${DayRegex}\\b`;
 	export const DateExtractor7 = `\\b${MonthNumRegex}\\s*/\\s*${DayRegex}((\\s+|\\s*(,|de)\\s*)${YearRegex})?\\b`;
 	export const DateExtractor8 = `(?<=\\b(em|no|o)\\s+)${DayRegex}[\\\\\\-]${MonthNumRegex}\\b`;
 	export const DateExtractor9 = `\\b${DayRegex}\\s*/\\s*${MonthNumRegex}((\\s+|\\s*(,|de)\\s*)${YearRegex})?\\b`;
-	export const DateExtractor10 = `\\b${YearRegex}\\s*[/\\\\\\-]\\s*${MonthNumRegex}\\s*[/\\\\\\-]\\s*${DayRegex}`;
+	export const DateExtractor10 = `\\b${YearRegex}\\s*[/\\\\\\-\\.]\\s*${MonthNumRegex}\\s*[/\\\\\\-\\.]\\s*${DayRegex}`;
 	export const DateExtractor11 = `(?<=\\b(dia)\\s+)${DayRegex}`;
 	export const HourNumRegex = `\\b(?<hournum>zero|uma|duas|tr[êe]s|[qc]uatro|cinco|seis|sete|oito|nove|dez|onze|doze)\\b`;
 	export const DescRegex = `(?<desc>pm\\b|am\\b|p\\.m\\.|a\\.m\\.)`;

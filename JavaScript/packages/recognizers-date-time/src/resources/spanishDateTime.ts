@@ -66,12 +66,12 @@ export namespace SpanishDateTime {
 	export const DateExtractor2 = `\\b(${WeekDayRegex}(\\s+|\\s*,\\s*))?${DayRegex}\\s*([\\.\\-]|de)?\\s*${MonthRegex}?(\\s*,\\s*|\\s*(del?)\\s*)${YearRegex}\\b`;
 	export const DateExtractor3 = `\\b(${WeekDayRegex}(\\s+|\\s*,\\s*))?${DayRegex}(\\s+|\\s*,\\s*|\\s+de\\s+|\\s*-\\s*)${MonthRegex}((\\s+|\\s*,\\s*)${YearRegex})?\\b`;
 	export const DateExtractor4 = `\\b${MonthNumRegex}\\s*[/\\\\\\-]\\s*${DayRegex}\\s*[/\\\\\\-]\\s*${YearRegex}`;
-	export const DateExtractor5 = `\\b${DayRegex}\\s*[/\\\\\\-]\\s*${MonthNumRegex}\\s*[/\\\\\\-]\\s*${YearRegex}`;
+	export const DateExtractor5 = `\\b${DayRegex}\\s*[/\\\\\\-\\.]\\s*${MonthNumRegex}\\s*[/\\\\\\-\\.]\\s*${YearRegex}`;
 	export const DateExtractor6 = `(?<=\\b(en|el)\\s+)${MonthNumRegex}[\\-\\.]${DayRegex}\\b`;
 	export const DateExtractor7 = `\\b${MonthNumRegex}\\s*/\\s*${DayRegex}((\\s+|\\s*,\\s*|\\s+de\\s+)${YearRegex})?\\b`;
 	export const DateExtractor8 = `(?<=\\b(en|el)\\s+)${DayRegex}[\\\\\\-]${MonthNumRegex}\\b`;
 	export const DateExtractor9 = `\\b${DayRegex}\\s*/\\s*${MonthNumRegex}((\\s+|\\s*,\\s*|\\s+de\\s+)${YearRegex})?\\b`;
-	export const DateExtractor10 = `\\b${YearRegex}\\s*[/\\\\\\-]\\s*${MonthNumRegex}\\s*[/\\\\\\-]\\s*${DayRegex}`;
+	export const DateExtractor10 = `\\b${YearRegex}\\s*[/\\\\\\-\\.]\\s*${MonthNumRegex}\\s*[/\\\\\\-\\.]\\s*${DayRegex}`;
 	export const HourNumRegex = `\\b(?<hournum>cero|una|dos|tres|cuatro|cinco|seis|siete|ocho|nueve|diez|once|doce)\\b`;
 	export const DescRegex = `(?<desc>pm\\b|am\\b|p\\.m\\.|a\\.m\\.)`;
 	export const AmDescRegex = `(am\\b|a\\.m\\.|a m\\b|a\\. m\\.\\b|a\\.m\\b|a\\. m\\b)`;
